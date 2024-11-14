@@ -1,0 +1,327 @@
+{
+  "contracts": [
+    {
+      "id": "1",
+      "title": "Desarrollo de Aplicación Web",
+      "description": "Desarrollo de una aplicación web completa con React y Node.js para sistema de gestión empresarial",
+      "status": "initiated",
+      "startDate": "2024-03-01",
+      "estimatedEndDate": "2024-06-01",
+      "amount": 15000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "1",
+          "name": "Juan Pérez",
+          "email": "juan@example.com",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "2",
+          "name": "Tech Solutions Inc",
+          "email": "tech@example.com",
+          "avatar": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Diseño de Identidad Corporativa",
+      "description": "Creación de logo, manual de marca y elementos visuales para startup tecnológica",
+      "status": "accepted",
+      "startDate": "2024-02-15",
+      "estimatedEndDate": "2024-04-15",
+      "amount": 8000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "1",
+          "name": "Juan Pérez",
+          "email": "juan@example.com",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "3",
+          "name": "Ana Silva",
+          "email": "ana@example.com",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "4",
+          "name": "Innovate Labs",
+          "email": "innovate@example.com",
+          "avatar": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Sistema de Gestión de Recursos Humanos",
+      "description": "Desarrollo e implementación de sistema integral de RRHH con múltiples módulos",
+      "status": "disputed",
+      "startDate": "2024-01-10",
+      "estimatedEndDate": "2024-07-10",
+      "amount": 45000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "5",
+          "name": "Carlos Ruiz",
+          "email": "carlos@example.com",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "6",
+          "name": "María López",
+          "email": "maria.lopez@example.com",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "7",
+          "name": "Enterprise Solutions SA",
+          "email": "enterprise@example.com",
+          "avatar": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        },
+        {
+          "id": "8",
+          "name": "HR Technologies Inc",
+          "email": "hrtech@example.com",
+          "avatar": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Plataforma E-learning",
+      "description": "Desarrollo de plataforma educativa con funcionalidades de videoconferencia y evaluación",
+      "status": "completed",
+      "startDate": "2023-11-01",
+      "estimatedEndDate": "2024-02-01",
+      "amount": 32000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "1",
+          "name": "Juan Pérez",
+          "email": "juan@example.com",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "9",
+          "name": "Roberto Sánchez",
+          "email": "roberto@example.com",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "10",
+          "name": "Laura Martínez",
+          "email": "laura@example.com",
+          "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "11",
+          "name": "EduTech Global",
+          "email": "edutech@example.com",
+          "avatar": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Migración a Microservicios",
+      "description": "Transformación de arquitectura monolítica a microservicios en la nube",
+      "status": "initiated",
+      "startDate": "2024-03-15",
+      "estimatedEndDate": "2024-09-15",
+      "amount": 75000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "12",
+          "name": "Diego Morales",
+          "email": "diego@example.com",
+          "avatar": "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "13",
+          "name": "Sofia Torres",
+          "email": "sofia@example.com",
+          "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "14",
+          "name": "Cloud Systems Corp",
+          "email": "cloud@example.com",
+          "avatar": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "App de Seguimiento Deportivo",
+      "description": "Desarrollo de aplicación móvil para seguimiento de rutinas y métricas deportivas",
+      "status": "accepted",
+      "startDate": "2024-02-01",
+      "estimatedEndDate": "2024-05-01",
+      "amount": 28000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "15",
+          "name": "Andrea Vega",
+          "email": "andrea@example.com",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "16",
+          "name": "FitTech Solutions",
+          "email": "fittech@example.com",
+          "avatar": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Sistema de Gestión Hospitalaria",
+      "description": "Implementación de sistema integral para gestión de hospitales y clínicas",
+      "status": "disputed",
+      "startDate": "2024-01-15",
+      "estimatedEndDate": "2024-08-15",
+      "amount": 95000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "17",
+          "name": "Ricardo Gómez",
+          "email": "ricardo@example.com",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "18",
+          "name": "Patricia Núñez",
+          "email": "patricia@example.com",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "19",
+          "name": "HealthTech Solutions",
+          "email": "healthtech@example.com",
+          "avatar": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        },
+        {
+          "id": "20",
+          "name": "Medical Systems Inc",
+          "email": "medsys@example.com",
+          "avatar": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Plataforma de Comercio Electrónico",
+      "description": "Desarrollo de marketplace B2B con integración de múltiples proveedores",
+      "status": "completed",
+      "startDate": "2023-10-01",
+      "estimatedEndDate": "2024-01-31",
+      "amount": 55000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "21",
+          "name": "Fernando Ríos",
+          "email": "fernando@example.com",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "22",
+          "name": "E-Commerce Solutions",
+          "email": "ecommerce@example.com",
+          "avatar": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Sistema de Análisis de Datos",
+      "description": "Implementación de plataforma de Business Intelligence y análisis predictivo",
+      "status": "rejected",
+      "startDate": "2024-02-15",
+      "estimatedEndDate": "2024-06-15",
+      "amount": 42000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "23",
+          "name": "Carmen Ortiz",
+          "email": "carmen@example.com",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "24",
+          "name": "Data Analytics Corp",
+          "email": "analytics@example.com",
+          "avatar": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "App de Delivery Multiservicio",
+      "description": "Desarrollo de aplicación móvil para delivery de productos y servicios",
+      "status": "initiated",
+      "startDate": "2024-03-01",
+      "estimatedEndDate": "2024-07-01",
+      "amount": 65000,
+      "currency": "USD",
+      "parties": [
+        {
+          "id": "25",
+          "name": "Miguel Ángel López",
+          "email": "miguel@example.com",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "26",
+          "name": "Ana María Rodríguez",
+          "email": "anamaria@example.com",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
+          "role": "contractor"
+        },
+        {
+          "id": "27",
+          "name": "Delivery Tech SA",
+          "email": "deliverytech@example.com",
+          "avatar": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=100&auto=format&fit=crop",
+          "role": "client"
+        }
+      ]
+    }
+  ]
+}

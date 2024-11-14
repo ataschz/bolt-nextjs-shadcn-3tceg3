@@ -1,14 +1,14 @@
+import { Button } from "@/components/ui/button"
+import { HeroSection } from "@/components/landing/hero-section"
+import { FeaturesSection } from "@/components/landing/features-section"
+import { CTASection } from "@/components/landing/cta-section"
+
 export default function Home() {
   return (
-    <div
-      style={{
-        maxWidth: 1280,
-        margin: '0 auto',
-        padding: '2rem',
-        textAlign: 'center',
-      }}
-    >
-      Start prompting.
+    <div className="flex flex-col min-h-screen">
+      <HeroSection />
+      <FeaturesSection />
+      <CTASection />
     </div>
-  );
+  )
 }
