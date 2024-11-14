@@ -1,42 +1,43 @@
-"use client"
+'use client';
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import Link from "next/link"
-import { useAuth } from "@/hooks/use-auth"
-import { useToast } from "@/components/ui/use-toast"
+} from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import Link from 'next/link';
+import { useAuth } from '@/hooks/use-auth';
+import { useToast } from '@/components/ui/use-toast';
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const { login, isLoading } = useAuth()
-  const { toast } = useToast()
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { login, isLoading } = useAuth();
+  const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      await login({ email, password })
+      await login({ email, password });
       toast({
-        title: "Inicio de sesión exitoso",
-        description: "Redirigiendo al dashboard...",
-      })
+        title: 'Inicio de sesión exitoso',
+        description: 'Redirigiendo al dashboard...',
+      });
     } catch (error) {
       toast({
-        variant: "destructive",
-        title: "Error al iniciar sesión",
-        description: "Por favor verifica tus credenciales e intenta nuevamente.",
-      })
+        variant: 'destructive',
+        title: 'Error al iniciar sesión',
+        description:
+          'Por favor verifica tus credenciales e intenta nuevamente.',
+      });
     }
-  }
+  };
 
   return (
     <Card>
@@ -70,16 +71,16 @@ export default function LoginPage() {
             />
           </div>
           <Button className="w-full" type="submit" disabled={isLoading}>
-            {isLoading ? "Iniciando sesión..." : "Iniciar sesión"}
+            {isLoading ? 'Iniciando sesión...' : 'Iniciar sesión'}
           </Button>
           <div className="text-center text-sm">
-            ¿No tienes una cuenta?{" "}
-            <Link href="/auth/register" className="text-primary hover:underline">
+            ¿No tienes una cuenta?{' '}
+            <Link href="/register" className="text-primary hover:underline">
               Regístrate
             </Link>
           </div>
         </form>
       </CardContent>
     </Card>
-  )
+  );
 }

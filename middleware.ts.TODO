@@ -1,0 +1,38 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+export function middleware(request: NextRequest) {
+  const isAuthenticated = request.cookies.has('auth-token');
+  const path = request.nextUrl.pathname;
+  const userRole = request.cookies.get('user-role')?.value;
+
+  if (path === '/' || path === '/auth/login' || path === '/auth/register') {
+    if (isAuthenticated) {
+      return NextResponse.redirect(
+        new URL(
+          userRole === 'contractor' ? '/contractor' : '/company',
+          request.url
+        )
+      );
+    }
+    return NextResponse.next();
+  }
+
+  if (!isAuthenticated) {
+    return NextResponse.redirect(new URL('/auth/login', request.url));
+  }
+
+  if (path.startsWith('/contractor') && userRole !== 'contractor') {
+    return NextResponse.redirect(new URL('/company', request.url));
+  }
+
+  if (path.startsWith('/company') && userRole !== 'client') {
+    return NextResponse.redirect(new URL('/contractor', request.url));
+  }
+
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+};

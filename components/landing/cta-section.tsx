@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Building2, User2 } from "lucide-react"
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Building2, User2 } from 'lucide-react';
 
 export function CTASection() {
   return (
@@ -11,7 +11,8 @@ export function CTASection() {
             ¿Listo para comenzar?
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-muted-foreground">
-            Únete a nuestra plataforma y comienza a gestionar tus pagos y contratos de manera eficiente
+            Únete a nuestra plataforma y comienza a gestionar tus pagos y
+            contratos de manera eficiente
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button size="lg" className="w-full sm:w-auto" asChild>
@@ -20,7 +21,12 @@ export function CTASection() {
                 Registrarse como Contratista
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto"
+              asChild
+            >
               <Link href="/auth/register?role=client">
                 <Building2 className="mr-2 h-5 w-5" />
                 Registrarse como Empresa
@@ -30,5 +36,5 @@ export function CTASection() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-"use client"
+'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,19 +9,21 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { LogOut, User } from "lucide-react"
-import { useRouter } from "next/navigation"
+} from '@/components/ui/dropdown-menu';
+import { LogOut, User } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export function UserButton() {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleLogout = () => {
     // Delete cookies
-    document.cookie = "auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT"
-    document.cookie = "user-role=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT"
-    router.push("/auth/login")
-  }
+    document.cookie =
+      'auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT';
+    document.cookie =
+      'user-role=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT';
+    router.push('/auth/login');
+  };
 
   return (
     <DropdownMenu>
@@ -54,5 +56,5 @@ export function UserButton() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

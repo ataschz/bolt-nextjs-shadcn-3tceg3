@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
-import { UserRole } from '@/types'
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { UserRole } from "@/types";
 
 interface LoginCredentials {
-  email: string
-  password: string
+  email: string;
+  password: string;
 }
 
 export function useAuth() {
-  const router = useRouter()
-  const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
 
   const login = async (credentials: LoginCredentials) => {
-    setIsLoading(true)
+    setIsLoading(true);
     try {
       // Simulated API call - replace with your actual auth logic
       const response = await new Promise((resolve) => {
@@ -22,25 +22,29 @@ export function useAuth() {
           resolve({
             user: {
               email: credentials.email,
-              role: credentials.email.includes('company') ? 'client' : 'contractor' as UserRole
-            }
-          })
-        }, 1000)
-      })
+              role: credentials.email.includes("company")
+                ? "client"
+                : ("contractor" as UserRole),
+            },
+          });
+        }, 1000);
+      });
+
+      console.log("response", response);
 
       // Set cookies or tokens here
-      document.cookie = `auth-token=dummy-token; path=/`
-      document.cookie = `user-role=${response.user.role}; path=/`
+      document.cookie = `auth-token=dummy-token; path=/`;
+      document.cookie = `user-role=${response.user.role}; path=/`;
 
       // Redirect based on role
-      router.push(response.user.role === 'client' ? '/company' : '/contractor')
+      router.push(response.user.role === "client" ? "/company" : "/contractor");
     } catch (error) {
-      console.error('Login failed:', error)
-      throw error
+      console.error("Login failed:", error);
+      throw error;
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
+  };
 
-  return { login, isLoading }
+  return { login, isLoading };
 }

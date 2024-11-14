@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Building2, CalendarDays, DollarSign, Users } from "lucide-react"
 import { format } from "date-fns"
 import { es } from "date-fns/locale"
+import Link from "next/link"
 
 export function ContractCard({ contract }: { contract: Contract }) {
   const formatDate = (date: string) => {
@@ -71,7 +72,11 @@ export function ContractCard({ contract }: { contract: Contract }) {
               </div>
               <div className="space-y-2">
                 {contractors.map((contractor) => (
-                  <div key={contractor.id} className="flex items-center space-x-3 bg-background p-2 rounded-lg">
+                  <Link 
+                    key={contractor.id} 
+                    href={`/${encodeURIComponent(contractor.name)}`}
+                    className="flex items-center space-x-3 bg-background p-2 rounded-lg hover:bg-muted/50 transition-colors"
+                  >
                     <Avatar className="h-10 w-10 border-2 border-primary/10">
                       <AvatarImage src={contractor.avatar} />
                       <AvatarFallback>{contractor.name.slice(0, 2).toUpperCase()}</AvatarFallback>
@@ -80,7 +85,7 @@ export function ContractCard({ contract }: { contract: Contract }) {
                       <p className="font-medium leading-none truncate">{contractor.name}</p>
                       <p className="text-xs text-muted-foreground mt-1 truncate">{contractor.email}</p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -93,7 +98,11 @@ export function ContractCard({ contract }: { contract: Contract }) {
               </div>
               <div className="space-y-2">
                 {clients.map((client) => (
-                  <div key={client.id} className="flex items-center space-x-3 bg-background p-2 rounded-lg">
+                  <Link 
+                    key={client.id} 
+                    href={`/${encodeURIComponent(client.name)}`}
+                    className="flex items-center space-x-3 bg-background p-2 rounded-lg hover:bg-muted/50 transition-colors"
+                  >
                     <Avatar className="h-10 w-10 border-2 border-primary/10">
                       <AvatarImage src={client.avatar} />
                       <AvatarFallback>{client.name.slice(0, 2).toUpperCase()}</AvatarFallback>
@@ -102,7 +111,7 @@ export function ContractCard({ contract }: { contract: Contract }) {
                       <p className="font-medium leading-none truncate">{client.name}</p>
                       <p className="text-xs text-muted-foreground mt-1 truncate">{client.email}</p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
